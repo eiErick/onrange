@@ -1,0 +1,21 @@
+mat-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-color: var(--border-color);
+    background-color: var(--pg-color);
+}
+
+mat-card mat-card-content select {
+    width: 200px;
+}
+
+mat-card mat-card-content {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+mat-card mat-card-content select {
+    color: #ffffff;
+}

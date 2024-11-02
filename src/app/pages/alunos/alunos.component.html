@@ -1,0 +1,33 @@
+<header>
+    <div>
+        <h2 class="title">On-range</h2>
+        @if (load) {
+            <div class="spinner load-title"></div>
+        }
+    </div>
+    <div class="container-btn">
+        <button mat-flat-button>Instalar App</button>
+        <mat-icon [routerLink]="['/configuracoes']" class="btns" aria-hidden="false" aria-label="settings" fontIcon="settings"></mat-icon>
+    </div>
+</header>
+<main>
+    <swiper-container space-between="30" centered-slides="true"  effect="cards" grab-cursor="true">
+        @for (item of menu; track $index) {
+            <swiper-slide>
+                <h3>{{ item.day }}</h3>
+                <div>
+                    <strong class="merenda">MERENDA</strong>
+                    <span class="data-merenda" id="segundaMerenda">{{ item.louch }}</span>
+                    <strong class="almoco">ALMOÇO</strong>
+                    <span class="data-almoco" id="segundaAlmoco">{{ item.snack }}</span>
+                    <button mat-flat-button>Info Nutricionais</button>
+                </div>
+            </swiper-slide>
+        }
+    </swiper-container>
+</main>
+@if (phrase) {
+    <footer>
+        <p>{{ phrase }}</p>
+    </footer>
+}
