@@ -1,0 +1,107 @@
+{
+  "configVersion": 1,
+  "timestamp": 1730588189233,
+  "index": "/onrange/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/onrange/chunk-FEQ336DD.js",
+        "/onrange/chunk-OIGKWPP3.js",
+        "/onrange/icon-transparent.png",
+        "/onrange/index.html",
+        "/onrange/main-X4SG2HYD.js",
+        "/onrange/manifest.webmanifest",
+        "/onrange/polyfills-FFHMD2TL.js",
+        "/onrange/styles-U4MWWU2I.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/onrange/cardapio.jpg",
+        "/onrange/chrome.svg",
+        "/onrange/icon-x128.png",
+        "/onrange/icon-x192.png",
+        "/onrange/icon-x384.png",
+        "/onrange/icon-x48.png",
+        "/onrange/icon-x512.png",
+        "/onrange/icon-x72.png",
+        "/onrange/icon-x96.png",
+        "/onrange/icons/icon-128x128.png",
+        "/onrange/icons/icon-144x144.png",
+        "/onrange/icons/icon-152x152.png",
+        "/onrange/icons/icon-192x192.png",
+        "/onrange/icons/icon-384x384.png",
+        "/onrange/icons/icon-512x512.png",
+        "/onrange/icons/icon-72x72.png",
+        "/onrange/icons/icon-96x96.png",
+        "/onrange/qrcode.png",
+        "/onrange/screenshot.png",
+        "/onrange/settings.svg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/onrange/cardapio.jpg": "60eb54a30a8d618f1c403ee500d492cc4d06805a",
+    "/onrange/chrome.svg": "5cad59e7b65c4527cc9f2a6d0f46f5b62a528305",
+    "/onrange/chunk-FEQ336DD.js": "7f44d83a21a772e36c30ca78234de16ad4d06f69",
+    "/onrange/chunk-OIGKWPP3.js": "fbbc3b2ae0bb399011d37199e1f4050493096f35",
+    "/onrange/icon-transparent.png": "becff096fcbca2925ca28481d00485fe214076ba",
+    "/onrange/icon-x128.png": "880c8b87eaa10bcc0ba2981e0641d0c792738869",
+    "/onrange/icon-x192.png": "a99169d41851365153fade8a6c38002d5ce2b8ee",
+    "/onrange/icon-x384.png": "dc1b932b5aaff3b0ed24f22dc63fd51db927f0df",
+    "/onrange/icon-x48.png": "d4a24133941d8dc01e95c730e803b4515f4393be",
+    "/onrange/icon-x512.png": "64cdf2b13430bbccf6ce1c83c12129c234f81986",
+    "/onrange/icon-x72.png": "54c59c548f4726bef7a11c6c23527bfeb0eabaf4",
+    "/onrange/icon-x96.png": "6d43c68d245ca0d8d5e4c97b454730db5ee6809e",
+    "/onrange/icons/icon-128x128.png": "f912963bdc6d5a38d8f1dd0afbaab2ce8d657acb",
+    "/onrange/icons/icon-144x144.png": "b155fd5f2fd5d2ea7760721063003c4cd95fd783",
+    "/onrange/icons/icon-152x152.png": "eae6e0f0c8afb8aaae339e2a569b43e9238e5e6c",
+    "/onrange/icons/icon-192x192.png": "15c4180454633880d98674aa7394656196c91584",
+    "/onrange/icons/icon-384x384.png": "94a915751ef6c9282df9aea405ad679230631814",
+    "/onrange/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
+    "/onrange/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
+    "/onrange/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
+    "/onrange/index.html": "1ca7c74fe76f61778a8e99d9aebeb18b7e3f9a6d",
+    "/onrange/main-X4SG2HYD.js": "e2c609739307ae0a798bd7e5bec3960bb241ae0a",
+    "/onrange/manifest.webmanifest": "27cef92d7c728f12b396830f746f98e53745ad1d",
+    "/onrange/polyfills-FFHMD2TL.js": "f49b49a155bc7d192db62a4c15d0a612b460a667",
+    "/onrange/qrcode.png": "02754dba199cdc281313f70462310909e8a791f1",
+    "/onrange/screenshot.png": "c98642387f21217c3b353cbe4ed534f30cff9211",
+    "/onrange/settings.svg": "a6231059df4295c505a9f3b8c80915e4cf897ab1",
+    "/onrange/styles-U4MWWU2I.css": "dd69e835093c9b91182ca7e414f9e913db85124b"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
