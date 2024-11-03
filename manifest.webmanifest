@@ -1,8 +1,8 @@
 {
-  "name": "onrange",
-  "short_name": "onrange",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "name": "Onrange",
+  "short_name": "Onrange",
+  "theme_color": "#1a1f24",
+  "background_color": "#1a1f24",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",

@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1730629086522,
+  "timestamp": 1730629305285,
   "index": "/onrange/index.html",
   "assetGroups": [
     {
@@ -64,7 +64,7 @@
     "/onrange/icons/icon-96x96.png": "6d43c68d245ca0d8d5e4c97b454730db5ee6809e",
     "/onrange/index.html": "7264832c5a52715b52e2c5ee1f05ff5c291199e8",
     "/onrange/main-OREGEW6L.js": "7f208a822f7c78aa8ba406a2a6b68b32ad41c7ef",
-    "/onrange/manifest.webmanifest": "27cef92d7c728f12b396830f746f98e53745ad1d",
+    "/onrange/manifest.webmanifest": "8f4b9a7cf5aafb315be716b2c842e65af3e1978a",
     "/onrange/polyfills-FFHMD2TL.js": "f49b49a155bc7d192db62a4c15d0a612b460a667",
     "/onrange/qrcode.png": "02754dba199cdc281313f70462310909e8a791f1",
     "/onrange/screenshot.png": "c98642387f21217c3b353cbe4ed534f30cff9211",
