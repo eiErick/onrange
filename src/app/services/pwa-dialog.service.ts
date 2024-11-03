@@ -19,16 +19,16 @@ export class PwaDialogService {
     });
   }
 
-  isIos(): boolean {
+  private isIos(): boolean {
     const userAgent = window.navigator.userAgent.toLowerCase();
     return /iphone|ipad|ipod/.test(userAgent);
   }
 
-  showInstallBanner(): boolean {
+  public showInstallBanner(): boolean {
     return !window.matchMedia('(display-mode: standalone)').matches && !this.isIos();
   }
 
-  promptInstallation(): void {
+  public promptInstallation(): void {
     if (this.allowsPwa && this.deferredPrompt) {
       this.deferredPrompt.prompt();
       this.deferredPrompt = null;

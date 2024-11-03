@@ -23,6 +23,11 @@ import {
 })
 export class PwaDialogComponent {
   public openChrome() {
-    window.location.href = "googlechrome://eierick.github.io/cardapio/alunos";
+    window.location.href = "googlechrome://onrange.com.br/";
+    this.copyLink();
+  }
+
+  private copyLink(): void {
+    navigator.clipboard.writeText('https://onrange.com.br/');
   }
 }

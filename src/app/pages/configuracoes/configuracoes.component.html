@@ -48,13 +48,11 @@
     <div class="menu-qrcode">
         <h3>qr code</h3>
         <img src="qrcode.png" alt="qr code">
-        <button mat-flat-button>Compartilhar</button>
-        <!-- <button class="btns">Compartilhar</button> -->
+        <button mat-flat-button (click)="share()">Compartilhar</button>
     </div>
 
     <div class="menu-admin">
         <h3>Tela de Admin</h3>
         <button routerLink="/admin" mat-flat-button>Admin</button>
-        <!-- <button routerLink="/admin" class="btns">Admin</button> -->
     </div>
 </main>

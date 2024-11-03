@@ -77,6 +77,20 @@ export class ConfiguracoesComponent {
   public callSetTheme(): void {
     this.themeService.setTheme(this.selectTheme.nativeElement.value);
   }
+
+  public async share() {
+    try {
+      await navigator.share({
+        url: 'https://onrange.com.br/',
+      });
+    } catch (err) {
+      this.copyLink();
+    }
+  }
+
+  public copyLink(): void {
+    navigator.clipboard.writeText('https://onrange.com.br/');
+  }
 }
 
 interface Themes {
