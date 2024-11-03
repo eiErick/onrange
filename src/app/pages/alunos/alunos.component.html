@@ -6,7 +6,7 @@
         }
     </div>
     <div class="container-btn">
-        <button mat-flat-button>Instalar App</button>
+        <button mat-flat-button (click)="openPwaDialog()">Instalar App</button>
         <mat-icon [routerLink]="['/configuracoes']" class="btns" aria-hidden="false" aria-label="settings" fontIcon="settings"></mat-icon>
     </div>
 </header>

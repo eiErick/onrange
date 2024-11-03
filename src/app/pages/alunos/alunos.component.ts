@@ -8,6 +8,7 @@ import { spreadsheetsService } from '../../services/spreadsheets.service';
 import { HttpClientModule } from '@angular/common/http';
 import { NutritionDialogComponent } from '../../components/nutrition-dialog/nutrition-dialog.component';
 import { MatDialog } from '@angular/material/dialog';
+import { PwaDialogService } from '../../services/pwa-dialog.service';
 
 register();
 
@@ -31,6 +32,7 @@ export class AlunosComponent {
 
   readonly dialog = inject(MatDialog);
 
+  shouldShowInstallButton: boolean = false;
   phrase!: string;
   data: any;
   menu: Array<SheetsDataInterface> = [];
@@ -38,10 +40,11 @@ export class AlunosComponent {
   load: boolean = false;
   isOutOfAir: boolean = false;
 
-  constructor(private storageService: StorageService, private spreadsheets: spreadsheetsService) {}
+  constructor(private storageService: StorageService, private spreadsheets: spreadsheetsService, private pwaDialogService: PwaDialogService) {}
 
   async ngOnInit() {
     this.loadPhrase();
+    this.shouldShowInstallButton = this.pwaDialogService.showInstallBanner();
 
     const savedMenu: Array<SheetsDataInterface> | null = this.storageService.getItem('menu');
     const savedOutOfAir: boolean | null = this.storageService.getItem('outOfAir');
@@ -120,6 +123,10 @@ export class AlunosComponent {
 
   public openNutritionalDialog() {
     this.dialog.open(NutritionDialogComponent);
+  }
+
+  public openPwaDialog(): void {
+    this.pwaDialogService.promptInstallation();
   }
   
   private clearMenu(): void {
