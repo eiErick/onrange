@@ -48,18 +48,21 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-main swiper-container {
-    /* margin: 100px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    width: 300px;
+    width: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+main swiper-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
 }
 
 main swiper-container swiper-slide {
@@ -91,10 +94,14 @@ main swiper-container .swiper-pagination {
 }
 
 footer {
+    width: 90%;
     position: fixed;
     transform: translate(-50%);
     left: 50%;
     bottom: 10px;
+}
+
+footer p {
     background-color: var(--pg-color);
     padding: 5px;
     border-radius: 5px;

@@ -115,6 +115,16 @@ export class AlunosComponent {
   private transpose(matrix: [any]): Array<any> {
     return matrix[0].map((_: any, colIndex: any) => matrix.map(row => row[colIndex]));
   }
+
+  private currentAudio: HTMLAudioElement | null = null;
+
+  public playSound(): void {
+    // Verifica se há algum som tocando atualmente
+    if (!this.currentAudio || this.currentAudio.paused) {
+      this.currentAudio = new Audio("/kiam-sound.mp3");
+      this.currentAudio.play();
+    }
+  }
 }
 
 class SheetsData implements SheetsDataInterface {
