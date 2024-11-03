@@ -126,7 +126,7 @@ export class AlunosComponent {
 
   public playSound(): void {
     if (!this.currentAudio || this.currentAudio.paused) {
-      this.currentAudio = new Audio("/kiam-sound.mp3");
+      this.currentAudio = new Audio("./kiam-sound.mp3");
       this.currentAudio.play();
     }
   }
