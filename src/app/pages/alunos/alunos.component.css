@@ -94,6 +94,8 @@ main swiper-container .swiper-pagination {
 }
 
 footer {
+    display: flex;
+    justify-content: center;
     width: 90%;
     position: fixed;
     transform: translate(-50%);
