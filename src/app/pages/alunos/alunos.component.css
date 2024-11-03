@@ -107,6 +107,7 @@ footer p {
     background-color: var(--pg-color);
     padding: 5px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 @keyframes spin {

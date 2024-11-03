@@ -28,6 +28,6 @@
 </main>
 @if (phrase) {
     <footer>
-        <p>{{ phrase }}</p>
+        <p (click)="loadPhrase()">{{ phrase }}</p>
     </footer>
 }

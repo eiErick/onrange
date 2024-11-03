@@ -101,7 +101,7 @@ export class AlunosComponent {
     this.storageService.setItem('lastChange', date);
   }
 
-  private loadPhrase(): void {
+  public loadPhrase(): void {
     const savedPhrase = localStorage.getItem('togglePhrases');
     if (savedPhrase === 'false') return;
 
