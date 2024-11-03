@@ -66,6 +66,7 @@ export class AlunosComponent {
       (res) => {
         this.data = this.transpose(res.values);
 
+        const lastChange = this.data[2][0];
         const status = this.data[3][0];
         const isMaintenance = status === 'Manutenção';
         const isOff = status === 'Desligado';
@@ -77,6 +78,7 @@ export class AlunosComponent {
           this.printOutOfAir();
         } else {
           this.loadCard();
+          this.saveLastChange(lastChange);          
           this.saveMenu();
         }
       }, (error) => {
@@ -91,11 +93,15 @@ export class AlunosComponent {
     alert('O servidor está fora do Ar!');
   }
 
-  private saveMenu() {
+  private saveMenu(): void {
     this.storageService.setItem('menu', this.menu);
   }
 
-  private loadPhrase() {
+  private saveLastChange(date: string): void {
+    this.storageService.setItem('lastChange', date);
+  }
+
+  private loadPhrase(): void {
     const savedPhrase = localStorage.getItem('togglePhrases');
     if (savedPhrase === 'false') return;
 

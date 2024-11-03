@@ -40,17 +40,20 @@ export class ConfiguracoesComponent {
   selectedTheme = this.themes[1].value;
   date: string = '**/**/****';
 
-  constructor(private storageService: StorageService, private themeService: ThemeService) {
-    this.loadToggles();
+  constructor(private storageService: StorageService, private themeService: ThemeService) {}
+
+  ngOnInit() {
     this.loadTheme();
+    this.loadToggles();
+    this.loadLastChange();
   }
 
-  public loadTheme() {
+  private loadTheme():void {
     const savedTheme = this.themeService.getTheme();
     if (savedTheme !== null) this.themes.forEach((item, index) => item.value === savedTheme ? this.selectedTheme = this.themes[index].value : '');
   }
 
-  public loadToggles() {
+  private loadToggles():void {
     const savedImg: boolean | null = this.storageService.getItem('toggleImg');
     const savedPhrases: boolean | null = this.storageService.getItem('togglePhrases');
 
@@ -58,15 +61,20 @@ export class ConfiguracoesComponent {
     if (savedPhrases !== null) this.togglePhrases = savedPhrases;
   }
 
-  public setToggleImgs() {
+  private loadLastChange(): void {
+    const savedLastChange = this.storageService.getItem('lastChange');
+    if (savedLastChange) this.date = savedLastChange.toString();
+  }
+
+  public setToggleImgs(): void {
     this.storageService.setItem('toggleImg', this.toggleImgs);
   }
 
-  public setTogglePhrases() {
+  public setTogglePhrases(): void {
     this.storageService.setItem('togglePhrases', this.togglePhrases);
   }
 
-  public callSetTheme() {
+  public callSetTheme(): void {
     this.themeService.setTheme(this.selectTheme.nativeElement.value);
   }
 }
