@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1730629534625,
+  "timestamp": 1730630659056,
   "index": "/onrange/index.html",
   "assetGroups": [
     {
@@ -11,11 +11,11 @@
         "ignoreVary": true
       },
       "urls": [
-        "/onrange/chunk-FEQ336DD.js",
-        "/onrange/chunk-OIGKWPP3.js",
+        "/onrange/chunk-2QWX7NN4.js",
+        "/onrange/chunk-DDAZ6JK6.js",
         "/onrange/icon-transparent.png",
         "/onrange/index.html",
-        "/onrange/main-OREGEW6L.js",
+        "/onrange/main-XUYJAJAV.js",
         "/onrange/manifest.webmanifest",
         "/onrange/polyfills-FFHMD2TL.js",
         "/onrange/styles-U4MWWU2I.css"
@@ -51,8 +51,8 @@
   "hashTable": {
     "/onrange/cardapio.jpg": "60eb54a30a8d618f1c403ee500d492cc4d06805a",
     "/onrange/chrome.svg": "5cad59e7b65c4527cc9f2a6d0f46f5b62a528305",
-    "/onrange/chunk-FEQ336DD.js": "7f44d83a21a772e36c30ca78234de16ad4d06f69",
-    "/onrange/chunk-OIGKWPP3.js": "fbbc3b2ae0bb399011d37199e1f4050493096f35",
+    "/onrange/chunk-2QWX7NN4.js": "091b250ffddd058a13761bae15a87fe209ab6d1e",
+    "/onrange/chunk-DDAZ6JK6.js": "8d6b03bfcbfac805c67a7f936e62faa442c3363b",
     "/onrange/icon-transparent.png": "becff096fcbca2925ca28481d00485fe214076ba",
     "/onrange/icons/icon-128x128.png": "880c8b87eaa10bcc0ba2981e0641d0c792738869",
     "/onrange/icons/icon-144x144.png": "37b3e9f8ef08233123c2aa49937220f83a9caf1b",
@@ -62,8 +62,8 @@
     "/onrange/icons/icon-512x512.png": "64cdf2b13430bbccf6ce1c83c12129c234f81986",
     "/onrange/icons/icon-72x72.png": "54c59c548f4726bef7a11c6c23527bfeb0eabaf4",
     "/onrange/icons/icon-96x96.png": "6d43c68d245ca0d8d5e4c97b454730db5ee6809e",
-    "/onrange/index.html": "7264832c5a52715b52e2c5ee1f05ff5c291199e8",
-    "/onrange/main-OREGEW6L.js": "7f208a822f7c78aa8ba406a2a6b68b32ad41c7ef",
+    "/onrange/index.html": "034c24d21f3dabfd4f0f96d2c9fa160372bac9fc",
+    "/onrange/main-XUYJAJAV.js": "0f1934dba7fd96f19b588ce5d101278cb6fc33ee",
     "/onrange/manifest.webmanifest": "8f4b9a7cf5aafb315be716b2c842e65af3e1978a",
     "/onrange/polyfills-FFHMD2TL.js": "f49b49a155bc7d192db62a4c15d0a612b460a667",
     "/onrange/qrcode.png": "02754dba199cdc281313f70462310909e8a791f1",
