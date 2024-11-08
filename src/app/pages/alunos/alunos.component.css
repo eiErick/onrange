@@ -45,9 +45,6 @@ div.settings-btn:hover, div.settings-btn:active {
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
@@ -62,16 +59,30 @@ main swiper-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 280px;
+    width: 100%;
+    height: 100%;
 }
 
 main swiper-container swiper-slide {
+    position: relative;
     background-color: var(--pg-color);
-    padding: 10px 0;
     border-radius: 10px;
+    width: 280px;
+    height: 290px;
 }
 
-main swiper-container div {
+main swiper-container swiper-slide div strong {
+    font-family: "League Spartan", sans-serif;
+}
+
+main swiper-container swiper-slide button {
+    position: absolute;
+    transform: translate(-50%, -120%);
+    top: 100%;
+    width: 155px;
+}
+
+main swiper-container swiper-slide div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -79,18 +90,19 @@ main swiper-container div {
     padding: 10px;
 }
 
-main swiper-slide h3 {
-    background-image: linear-gradient(to right, var(--orange-light) 0%, var(--orange-dark) 100%);
-    padding: 8px 0;
-    margin: 0 10px;
+main swiper-container swiper-slide h3 {
+    font-family: "League Spartan", sans-serif;
+    text-transform: uppercase;
+    background-color: var(--orange);
+    padding: 10px 0;
+    margin: 10px;
     font-size: 24px;
     border-radius: 8px;
     color: #fff;
 }
 
-main swiper-container .swiper-pagination {
-    position: absolute;
-    background-color: red;
+main swiper-container swiper-slide .today {
+    background-color: var(--green);
 }
 
 footer {

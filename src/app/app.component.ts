@@ -10,5 +10,4 @@ import { AlunosComponent } from "./pages/alunos/alunos.component";
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'onrange';
 }

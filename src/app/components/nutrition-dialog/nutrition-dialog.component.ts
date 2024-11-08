@@ -16,7 +16,6 @@ import {
     MatDialogContent,
     MatDialogTitle,
     MatButton,
-    MatDialogClose,
   ],
   templateUrl: './nutrition-dialog.component.html',
   styleUrl: './nutrition-dialog.component.css'
