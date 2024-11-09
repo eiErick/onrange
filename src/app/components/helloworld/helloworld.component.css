@@ -1,8 +1,0 @@
-p {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    font-size: 2rem;
-    font-weight: bolder;
-}
