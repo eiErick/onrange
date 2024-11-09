@@ -1,9 +1,8 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatIcon } from '@angular/material/icon';
-import { MatOption } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
 import { StorageService } from '../../services/storage.service';
@@ -17,14 +16,13 @@ import { ThemeService } from '../../services/theme.service';
     FormsModule,
     MatSlideToggleModule,
     MatIcon,
-    MatOption,
     MatSelectModule,
     MatButtonModule,
   ],
   templateUrl: './configuracoes.component.html',
   styleUrl: './configuracoes.component.css'
 })
-export class ConfiguracoesComponent {
+export class ConfiguracoesComponent implements AfterViewInit {
   @ViewChild('theme') selectTheme!: ElementRef;
 
   toggleImgs: boolean = false;
@@ -42,7 +40,7 @@ export class ConfiguracoesComponent {
 
   constructor(private storageService: StorageService, private themeService: ThemeService) {}
 
-  ngOnInit() {
+  ngAfterViewInit() {
     this.loadTheme();
     this.loadToggles();
     this.loadLastChange();
