@@ -23,11 +23,11 @@
                 }
                 <div>
                     <strong class="merenda">MERENDA</strong>
-                    <span class="data-merenda" id="segundaMerenda">{{ item.louch }}</span>
+                    <span class="data-merenda" id="segundaMerenda">{{ item.snack }}</span>
                     <strong class="almoco">ALMOÇO</strong>
-                    <span class="data-almoco" id="segundaAlmoco">{{ item.snack }}</span>
+                    <span class="data-almoco" id="segundaAlmoco">{{ item.louch }}</span>
                 </div>
-                <button mat-flat-button (click)="openNutritionalDialog()">Info Nutricionais</button>
+                <button mat-flat-button (click)="openNutritionalDialog(item.snackCalories, item.snackLactose, item.louchCalories, item.louchLactose)">Info Nutricionais</button>
             </swiper-slide>
         }
     </swiper-container>

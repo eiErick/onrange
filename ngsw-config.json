@@ -7,7 +7,7 @@
       "installMode": "prefetch",
       "resources": {
         "files": [
-          "/icon-transparent.png",
+          "/icon.png",
           "/index.csr.html",
           "/index.html",
           "/manifest.webmanifest",
